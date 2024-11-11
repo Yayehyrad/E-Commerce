@@ -7,6 +7,7 @@ import AuthLayout from './components/auth/layout'
 import AuthLogin from './pages/auth/Login'
 import { Route, Routes } from 'react-router-dom'
 import AuthRegister from './pages/auth/Register'
+import AdminLayout from './components/admin-view/layout'
 
 function App() {
  
@@ -22,6 +23,14 @@ function App() {
         <Route path="login" element={<AuthLogin />} />
         <Route path="register" element={<AuthRegister />} />
       </Route>
+      <Route
+          path="/admin"
+          element={
+            
+              <AdminLayout />
+           
+          }
+        /> 
  </Routes>
   
     </div>
